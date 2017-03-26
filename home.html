@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style type="text/css">
-#autocolor{
-	width: 5em;
-	height: 2em;
-	padding: 0.75em 0.5em 0;
-	text-align: center;
-	border: 1px solid black;
-	margin: 3em auto 0;
-	font: bold 90% sans-serif;
-}
-</style>
-</head>
-<body>
-<div id="autocolor">
-Wow!
-</div>
-<script type="text/javascript">
-(function(){
-	var hexacode = ['#ffff00', '#ff0000', '#00ff00', '#0000ff', '#ffffff'],
-	el = document.getElementById('autocolor').style,
-	counter = -1,
-	hexalen = hexacode.length;
-	function auto(){
-		el.backgroundColor = hexacode[counter = ++counter % hexalen];
-	}
-	setInterval(auto, 20);
-})();
-</script>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <style type="text/css">
+            #posts {
+                width: 90%;
+                height: 700px;
+                margin: auto
+            }
+        </style>
+    </head>
+    <body onload="return ran_col()">
+        <div id="posts">
+        </div>
+        <script type="text/javascript">
+            function ran_col() { //function name
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
+            }
+        </script>
+    </body>
 </html>
