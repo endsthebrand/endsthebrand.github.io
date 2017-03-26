@@ -5,34 +5,35 @@
 
 function setbackground()
 {
-window.setTimeout( "setbackground()", 3000); // 3000 milliseconds delay
+window.setTimeout( "setbackground()", 5000); // 5000 milliseconds delay
 
 var index = Math.round(Math.random() * 9);
 
 var ColorValue = "FFFFFF"; // default color - white (index = 0)
 
 if(index == 1)
-ColorValue = "#334431"; //peach
+ColorValue = "FFCCCC"; //peach
 if(index == 2)
-ColorValue = "#e05038"; //violet
+ColorValue = "CCAFFF"; //violet
 if(index == 3)
-ColorValue = "#e6af4b"; //lt blue
+ColorValue = "A6BEFF"; //lt blue
 if(index == 4)
-ColorValue = "#fccdd3"; //cyan
+ColorValue = "99FFFF"; //cyan
 if(index == 5)
-ColorValue = "#98dafc"; //tan
+ColorValue = "D5CCBB"; //tan
 if(index == 6)
-ColorValue = "#e8edf3"; //lt green
+ColorValue = "99FF99"; //lt green
 if(index == 7)
-ColorValue = "#dddfd4"; //lt yellow
+ColorValue = "FFFF99"; //lt yellow
 if(index == 8)
-ColorValue = "#fae596"; //lt orange
+ColorValue = "FFCC99"; //lt orange
 if(index == 9)
-ColorValue = "#89bdd3"; //lt grey
+ColorValue = "CCCCCC"; //lt grey
 
 document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
 
 }
 </script>
+
 <body onload="setbackground();">
 
