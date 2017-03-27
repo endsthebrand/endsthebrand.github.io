@@ -1,5 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    </head>
+<style>
 
-<img src="endslogo.png" alt="ENDS" height="200" width="350">
+p {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Signika', sans-serif;
+  color: white;
+}
 
-</html>
+        </style>
+
+<body>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+    <center><img src="endslogo.png" alt="ENDS" height="175" width="900"></center>
+<br />
+<br />
+<p id="demo"></p>
+<p> coming soon... </p>
+
+<script type="text/javascript">
+
+function setbackground()
+{
+window.setTimeout( "setbackground()", 2500); // 5000 milliseconds delay
+
+var index = Math.round(Math.random() * 9);
+
+var ColorValue = "F0810F"; // default color - white (index = 0)
+
+if(index == 1)
+ColorValue = "FFC0CB"; //peach
+if(index == 2)
+ColorValue = "228B22"; //violet
+if(index == 3)
+ColorValue = "E64200"; //lt blue
+if(index == 4)
+ColorValue = "A3E3AA"; //cyan
+if(index == 5)
+ColorValue = "FFEFDB"; //tan
+if(index == 6)
+ColorValue = "3399FF"; //lt green
+if(index == 7)
+ColorValue = "F6B36F"; //lt yellow
+if(index == 8)
+ColorValue = "99AF79"; //lt orange
+if(index == 9)
+ColorValue = "FF7373"; //lt grey
+
+document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+
+}
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("May 30, 2017 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+</script>
+
+<body onload="setbackground();">
+
+    </body>
+    </html>
