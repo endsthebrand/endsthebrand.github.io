@@ -2,16 +2,24 @@
 <html lang="en">
     <head>
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Shrikhand" rel="stylesheet">
     </head>
 <style>
-
 p {
   text-align: center;
   font-size: 60px;
-  font-family: 'Signika', sans-serif;
+  font-family: 'Shrikhand', sans-serif;
   color: white;
+  margin: 50px;
 }
-
+ hr { margin-left: 70px;
+margin-right: 70px; 
+margin: 50px;
+border: 6px solid;
+border-color: rgb( 255, 245, 212);
+    }
+ #demo { font-family: Arial; 
+    }
         </style>
 
 <body>
@@ -21,22 +29,18 @@ p {
 <br />
 <br />
 <br />
-    <center><img src="endslogo.png" alt="ENDS" height="175" width="900"></center>
-<br />
-<br />
+    <center><img src="endslogo.png" alt="ENDS" height="175" width="500"></center>
+    <hr>
+<p> SOON LAND. </p>
 <p id="demo"></p>
-<p> coming soon... </p>
+
 
 <script type="text/javascript">
-
 function setbackground()
 {
 window.setTimeout( "setbackground()", 2500); // 5000 milliseconds delay
-
 var index = Math.round(Math.random() * 9);
-
 var ColorValue = "F0810F"; // default color - white (index = 0)
-
 if(index == 1)
 ColorValue = "FFC0CB"; //peach
 if(index == 2)
@@ -55,18 +59,12 @@ if(index == 8)
 ColorValue = "99AF79"; //lt orange
 if(index == 9)
 ColorValue = "FF7373"; //lt grey
-
 document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
-
 }
-
-
 // Set the date we're counting down to
 var countDownDate = new Date("May 30, 2017 18:00:00").getTime();
-
 // Update the count down every 1 second
 var x = setInterval(function() {
-
     // Get todays date and time
     var now = new Date().getTime();
     
@@ -89,7 +87,6 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-
 </script>
 
 <body onload="setbackground();">
