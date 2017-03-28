@@ -7,7 +7,6 @@
     </head>
 <style>
 
-
 p {
   text-align: center;
   font-size: 60px;
@@ -46,6 +45,32 @@ body{
 <p id="demo"></p>
 
 <script type="text/javascript">
+
+function setbackground()
+{
+window.setTimeout( "setbackground()", 2500); // 5000 milliseconds delay
+var index = Math.round(Math.random() * 9);
+var ColorValue = "F0810F"; // default color - white (index = 0)
+if(index == 1)
+ColorValue = "FFC0CB"; //peach
+if(index == 2)
+ColorValue = "228B22"; //violet
+if(index == 3)
+ColorValue = "E64200"; //lt blue
+if(index == 4)
+ColorValue = "A3E3AA"; //cyan
+if(index == 5)
+ColorValue = "FFEFDB"; //tan
+if(index == 6)
+ColorValue = "3399FF"; //lt green
+if(index == 7)
+ColorValue = "F6B36F"; //lt yellow
+if(index == 8)
+ColorValue = "99AF79"; //lt orange
+if(index == 9)
+ColorValue = "FF7373"; //lt grey
+document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+}
 
 // Create Countdown
 var Countdown = {
@@ -97,68 +122,6 @@ var Countdown = {
 
             --that.values.seconds;              
             if(that.values.minutes >= 0 && that.values.seconds < 0) {
-
-                that.values.seconds = 59;
-                --that.values.minutes;
-            }
-
-            if(that.values.hours >= 0 && that.values.minutes < 0) {
-
-                that.values.minutes = 59;
-                --that.values.hours;
-            }
-
-            // Update DOM values
-            // Hours
-            that.checkHour(that.values.hours, $hour_1, $hour_2);
-
-            // Minutes
-            that.checkHour(that.values.minutes, $min_1, $min_2);
-
-            // Seconds
-            that.checkHour(that.values.seconds, $sec_1, $sec_2);
-
-            --that.total_seconds;
-        }
-        else {
-            clearInterval(that.countdown_interval);
-        }
-    }, 1000);    
-  },
-  
-  animateFigure: function($el, value) {
-    
-     var that         = this,
-		     $top         = $el.find('.top'),
-         $bottom      = $el.find('.bottom'),
-         $back_top    = $el.find('.top-back'),
-
-
-function setbackground()
-{
-window.setTimeout( "setbackground()", 2500); // 5000 milliseconds delay
-var index = Math.round(Math.random() * 9);
-var ColorValue = "F0810F"; // default color - white (index = 0)
-if(index == 1)
-ColorValue = "FFC0CB"; //peach
-if(index == 2)
-ColorValue = "228B22"; //violet
-if(index == 3)
-ColorValue = "E64200"; //lt blue
-if(index == 4)
-ColorValue = "A3E3AA"; //cyan
-if(index == 5)
-ColorValue = "FFEFDB"; //tan
-if(index == 6)
-ColorValue = "3399FF"; //lt green
-if(index == 7)
-ColorValue = "F6B36F"; //lt yellow
-if(index == 8)
-ColorValue = "99AF79"; //lt orange
-if(index == 9)
-ColorValue = "FF7373"; //lt grey
-document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
-}
 
 
 // Set the date we're counting down to
