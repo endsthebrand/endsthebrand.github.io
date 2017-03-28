@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker|Shrikhand" rel="stylesheet">       
-<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5"> 
-    </head>
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Shrikhand', sans-serif;
-  color: white;
-  margin: 50px;
-}
-    
-hr { border: 4px solid;
- margin: 50px 320px 0 320px;
- border-color: rgb(255, 201, 172);
-    }
-   
- #demo { font-family: 'Bangers'; 
-    }
-body{
-	text-align: center;
-	background-color: rgba(255, 255, 255, .4);
-        font-family: sans-serif;
-        font-weight: 100;
-}
+<html>
+<head>
+	</head>
+<script>
 
 @import "compass/css3";
 
 // Global
 body {
-  background-color: #00ffffff;
+  background-color: 00ffffff;
 }
 
 .wrap {
@@ -47,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: 1a1a1a;
 }
 
 // Variables
@@ -62,7 +37,7 @@ h1 {
   
   strong {
     font-weight: 400;
-    color: #00ffffff;
+    color: 00ffffff;
   }  
 }
 
@@ -96,7 +71,7 @@ h2 {
     display: block;
     margin-bottom: 15px;
     font: normal 0.94em $lato;
-    color: #1a1a1a;
+    color: 1a1a1a;
     text-transform: uppercase;
   }
 
@@ -106,7 +81,7 @@ h2 {
     height: 110px;
     width: 100px;
     margin-right: 10px;
-    background-color: #00ffffff;
+    background-color: 00ffffff;
     border-radius: 8px; 
     @include box-shadow(0 3px 4px 0 rgba(0, 0, 0, .2),inset 2px 4px 0 0 rgba(255, 255, 255, .08));
 
@@ -121,7 +96,7 @@ h2 {
       margin: auto;
       font: normal 5.94em/107px $lato;
       font-weight: 700;
-      color: #de4848;
+      color: de4848;
     }
 
     .top, .bottom-back {    
@@ -139,7 +114,7 @@ h2 {
 
     .top {
       z-index: 3;
-      background-color: #00ffffff;
+      background-color: 00ffffff;
       transform-origin: 50% 100%;
       -webkit-transform-origin: 50% 100%; 
       @include border-top-radius(10px); 
@@ -166,7 +141,7 @@ h2 {
       top: 0;
       height: 50%;
       overflow: hidden;    
-      background-color: #f7f7f7;
+      background-color: f7f7f7;
       @include border-top-radius(10px);
 
       span {
@@ -187,7 +162,7 @@ h2 {
     .top-back {
       z-index: 4;
       bottom: 0;
-      background-color: #fff;
+      background-color: fff;
       -webkit-transform-origin: 50% 0;
       transform-origin: 50% 0;
       @include transform(perspective(200px) rotateX(180deg));
@@ -204,130 +179,12 @@ h2 {
   }
 }
 
-        </style>
 
-<body>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-    <center><img src="endslogo.png" alt="ENDS" height="175" width="500"></center>
-    <hr>
-<p> SOON LAND. </p>
-<p id="demo"></p>
+	</script>
 
-<div class="wrap">  
-  <h1>Draft <strong>Countdown</strong></h1>
 
-  <div class="countdown">
-    <div class="bloc-time hours" data-init-value="24">
-      <span class="count-title">Hours</span>
-
-      <div class="figure hours hours-1">
-        <span class="top">2</span>
-        <span class="top-back">
-          <span>2</span>
-        </span>
-        <span class="bottom">2</span>
-        <span class="bottom-back">
-          <span>2</span>
-        </span>
-      </div>
-
-      <div class="figure hours hours-2">
-        <span class="top">4</span>
-        <span class="top-back">
-          <span>4</span>
-        </span>
-        <span class="bottom">4</span>
-        <span class="bottom-back">
-          <span>4</span>
-        </span>
-      </div>
-    </div>
-
-    <div class="bloc-time min" data-init-value="0">
-      <span class="count-title">Minutes</span>
-
-      <div class="figure min min-1">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>        
-      </div>
-
-      <div class="figure min min-2">
-       <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>
-      </div>
-    </div>
-
-    <div class="bloc-time sec" data-init-value="0">
-      <span class="count-title">Seconds</span>
-
-        <div class="figure sec sec-1">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>          
-      </div>
-
-      <div class="figure sec sec-2">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-function setbackground()
-{
-window.setTimeout( "setbackground()", 2500); // 5000 milliseconds delay
-var index = Math.round(Math.random() * 9);
-var ColorValue = "F0810F"; // default color - white (index = 0)
-if(index == 1)
-ColorValue = "FFC0CB"; //peach
-if(index == 2)
-ColorValue = "228B22"; //violet
-if(index == 3)
-ColorValue = "E64200"; //lt blue
-if(index == 4)
-ColorValue = "A3E3AA"; //cyan
-if(index == 5)
-ColorValue = "FFEFDB"; //tan
-if(index == 6)
-ColorValue = "3399FF"; //lt green
-if(index == 7)
-ColorValue = "F6B36F"; //lt yellow
-if(index == 8)
-ColorValue = "99AF79"; //lt orange
-if(index == 9)
-ColorValue = "FF7373"; //lt grey
-document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
-}
+<script>
 
 // Create Countdown
 var Countdown = {
@@ -470,11 +327,97 @@ var Countdown = {
 
 // Let's go !
 Countdown.init();
+
+
 </script>
 
-<body onload="setbackground();">
+<body>
+
+<div class="wrap">  
+  <h1>Draft <strong>Countdown</strong></h1>
+
+  <div class="countdown">
+    <div class="bloc-time hours" data-init-value="24">
+      <span class="count-title">Hours</span>
+
+      <div class="figure hours hours-1">
+        <span class="top">2</span>
+        <span class="top-back">
+          <span>2</span>
+        </span>
+        <span class="bottom">2</span>
+        <span class="bottom-back">
+          <span>2</span>
+        </span>
+      </div>
+
+      <div class="figure hours hours-2">
+        <span class="top">4</span>
+        <span class="top-back">
+          <span>4</span>
+        </span>
+        <span class="bottom">4</span>
+        <span class="bottom-back">
+          <span>4</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="bloc-time min" data-init-value="0">
+      <span class="count-title">Minutes</span>
+
+      <div class="figure min min-1">
+        <span class="top">0</span>
+        <span class="top-back">
+          <span>0</span>
+        </span>
+        <span class="bottom">0</span>
+        <span class="bottom-back">
+          <span>0</span>
+        </span>        
+      </div>
+
+      <div class="figure min min-2">
+       <span class="top">0</span>
+        <span class="top-back">
+          <span>0</span>
+        </span>
+        <span class="bottom">0</span>
+        <span class="bottom-back">
+          <span>0</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="bloc-time sec" data-init-value="0">
+      <span class="count-title">Seconds</span>
+
+        <div class="figure sec sec-1">
+        <span class="top">0</span>
+        <span class="top-back">
+          <span>0</span>
+        </span>
+        <span class="bottom">0</span>
+        <span class="bottom-back">
+          <span>0</span>
+        </span>          
+      </div>
+
+      <div class="figure sec sec-2">
+        <span class="top">0</span>
+        <span class="top-back">
+          <span>0</span>
+        </span>
+        <span class="bottom">0</span>
+        <span class="bottom-back">
+          <span>0</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+	</body>
 
-    </body>
-    </html>
+</html
