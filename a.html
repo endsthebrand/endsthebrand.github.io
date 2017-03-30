@@ -62,8 +62,7 @@ return true; }
 <label for="FromEmailAddress">EMAIL</label><br />
 <input name="FromEmailAddress" type="text" maxlength="60" style="width: 340px;" />
 </td> </tr> <tr> <td align="center">
-<div style="float: right"><a id="trap" href="https://www.100forms.com" id="lnk100" title="form to email"><!-- nothing --></a></div>
-<a id="trap" href='https://www.youtube.com/?gl=GB'><!-- nothing --></a>
+<div style="float: right"><a href="https://www.100forms.com" id="lnk100" title="form to email"><!-- nothing --></a></div>
 <script src="https://www.100forms.com/js/FORMKEY:YRZFWQGZTWQJ/SEND:endsthebrand@hotmail.com" type="text/javascript"></script>
 <input id="skip_Submit" name="skip_Submit" type="submit" value="SUBSCRIBE" />
 </td> </tr>
@@ -103,32 +102,6 @@ ColorValue = "FF7373"; //lt grey
 document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
 }
 
-// Set the date we're counting down to
-var countDownDate = new Date("May 30, 2017 18:00:00").getTime();
-// Update the count down every 1 second
-var x = setInterval(function() {
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
 </script>
 
 <body onload="setbackground();">
