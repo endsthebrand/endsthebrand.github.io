@@ -51,7 +51,7 @@ opacity: 0.5px;
 
 .subscription label { 
 font-family: 'Contrail One', sans-serif;
-color: black;
+color: black
 font-size: 29px;
 padding: 30px;
 text-transform: uppercase;
@@ -113,28 +113,20 @@ textarea:focus, input:focus {
 <p> SOON LAND. </p>
 
 <html>
-<div class="subscription">
-<form action="//submit.form" id="NewsletterSubscription100" method="post" onsubmit="return ValidateForm(this);">
-<script type="text/javascript">
+<body>
 
-$('#trap').remove();
+<form action="sendmessage.php">
 
-function ValidateForm(frm) {
-if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('endsthebrand@hotmail.com'); frm.FromEmailAddress.focus(); return false; }
-return true; }
-</script>
-<table border="0" cellpadding="5" cellspacing="0" style="width: 360px; margin: auto; text-align: left;">
-<tr> <td>
-<input name="FromEmailAddress" type="text" placeholder="ENTER EMAIL FOR UPDATES" maxlength="60" STYLE="color=#FFFF00; width: 270px" />
-</td> </tr> <tr> <td align="center">
-<div style="float: right"><a href="https://www.100forms.com" id="lnk100" title="form to email"><!-- nothing --></a></div>
-<script src="v.html" type="text/javascript"></script>
-</td> </tr>
-</table>
-</form>
-</div>
+  First name:<input type="text" name="fname"><br>
+  <input type="hidden" name="redirect" value="endsthebrand.github.io/a.html">
+  <input type="hidden" name="send_to" value="shonibareayomide@hotmail.com">
+  <input type="hidden" name="send_from" value="shonibareayomide@hotmail.com">
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
 
 
 <body>
