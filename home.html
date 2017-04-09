@@ -84,8 +84,26 @@ body{
    color:    #ffc0cb;
 }
 
+  input + label:after {
+    content: 'click my input';
+    color: blue;
+  }
 
-        </style>
+  input:focus + label:after {
+    content: 'not valid yet';
+    color: blue;
+  }
+
+  input:valid + label:after {
+    content: 'looks good';
+    color: red;
+  }
+</style>
+
+
+<input id="input" type="number" required />
+<label for="input"></label>
+
 
 <body>
 
