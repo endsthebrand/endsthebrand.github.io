@@ -1,6 +1,5 @@
-style.css
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
-<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 
 p {
   text-align: center;
@@ -37,13 +36,16 @@ body{
     -webkit-transition:height 1s;
     width: 270px;
     text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
 #email:focus {
   color: Ghostwhite;
     height:100px;
-    font-size:20px;
+    font-size:16px;
     font-weight: bold;
   text-transform: uppercase;
 }
@@ -58,6 +60,7 @@ body{
     font-size: 15px;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    font-size: 16px;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    line-height:15px;
