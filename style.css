@@ -1,6 +1,8 @@
 style.css
 
+<head>
 @import url('https://fonts.googleapis.com/css?family=Bangers');
+</head>
 
 p {
   text-align: center;
