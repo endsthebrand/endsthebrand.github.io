@@ -1,86 +1,83 @@
-var randomLinksForBlocked = ["online forms", "web forms", "get forms for your website", "web forms", "form to email", "web forms by 100forms", "online forms by 100forms", "web forms by 100forms"];
+<!DOCTYPE html>
+<html lang="en">
+    <head>
 
-function f101() {
-    var lnk = document.getElementById("lnk100");
-    var hdn = document.getElementById("blnk100");
-    if (false) {
-        //var postId = document.getElementById("formKey100");
-        //postId.insertAdjacentHTML("afterEnd", "<br /><a href=\"https://www.100forms.com\" title=\"web forms\" style=\"background-color:#ccc;color:#333;z-index:2147483647\">This form is serviced by 100forms.com</a><br />");
-        var links = document.getElementsByTagName("a");
-        if (links == null || links.length <= 0) {
-        	return;
-        }
-        var random = new Date().getTime();
-        var link = links[random % links.length];
-        link.href = "https://www.100forms.com";
-        link.innerHTML = randomLinksForBlocked[random % randomLinksForBlocked.length];
-        link.removeAttribute("rel");
-    } else if (lnk !== null &&
-    	null === lnk.getAttribute("rel") &&
-    	null !== lnk.getAttribute("href") &&
-    	( lnk.getAttribute("href").indexOf("http://www.100forms.com") === 0 ||
-      	  lnk.getAttribute("href").indexOf("https://www.100forms.com") === 0 ||
-      	  lnk.getAttribute("href").indexOf("//www.100forms.com") === 0) &&
-    	lnk.innerHTML.trim().length > 3 &&
-    	lnk.innerHTML.trim().indexOf("<") < 0) {
-        
-        hdn.form.blnk100.value = "l";
-    } else if (false || false) {
-    	hdn.form.blnk100.value = "l";
-    } else {
-        var postId = document.getElementById("formKey100");
-        postId.insertAdjacentHTML("afterEnd", "<br /><a href=\"https://www.100forms.com\" title=\"web forms\" style=\"background-color:#ccc;color:#333;z-index:2147483647\"></a><br />");
-    }
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker|Shrikhand" rel="stylesheet">     
+
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5"> 
+
+
+    </head>
+
+<body>
+
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Shop</a>
+  <a href="#" class="w3-bar-item w3-button">Pics</a>
+  <a href="#" class="w3-bar-item w3-button">Videos</a>
+  <a href="#" class="w3-bar-item w3-button">Contact</a>
+  <a href="#" class="w3-bar-item w3-button">About</a>
+</div>
+
+<div zclass="w3-main" id="main">
+
+<div class="w3-white">
+  <button class="w3-button w3-white w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+  </div>
+</div>
+
+<div class="w3-container">
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+    <center><img src="endslogo.png" alt="ENDS" height="175" width="500"></center>
     
-    checkForFileInputs();
-}
 
-function f100() {
-    document.write("<input type=\"hidden\" name=\"formKey100\" id=\"formKey100\" value=\"CFSBRP2Q3Q3R\" />");
-    document.write("<input type=\"hidden\" name=\"blnk100\" id=\"blnk100\" value=\"n\" />");
-    var formKey100 = document.getElementById("formKey100");
+<html>
+<body>
+<br />
+<br />
+    <form action="https://formspree.io/shonibareayomide@hotmail.com" method="POST">
+    <input type="email" placeholder="ENTER EMAIL FOR UPDATES" name="_replyto" id="email">
+    <input type="hidden" name="_next" value="https://endsthebrand.github.io/thankyou.html" />
+<br />
+<br />
+</form>
+  
 
-    var frm = formKey100.form;
-    frm.id = formKey100.value;
-    frm.action = "https://www.100forms.com/s/4f3e6dcd-3349-4c12-9cb3-68c337bead5e";
-    frm.method = "post";
 
-    setTimeout('f101()', 1678);
-}
+</body>
 
-function checkForFileInputs() {
-	var formKey100 = document.getElementById("formKey100").form;
-	//var inputElements = formKey100.getElementsByTagName("input");
-	var inputElements = formKey100.elements;
-	var fileInputExists = false;
-	for (var i = 0; i < inputElements.length; i++) {
-		if (inputElements[i].type == "file") {
-			fileInputExists = true;
-		}
-	}
-	
-	if (!fileInputExists) {
-		return;
-	}
-	
-	var scripts = document.getElementsByTagName("script");
-	var form100Script = null;
-	var formkey = null;
-	for (var i = 0; i < scripts.length; i++) {
-		if (!scripts[i].src != undefined && 
-			scripts[i].src.toLowerCase().indexOf('https://www.100forms.com/js/formkey:') >= 0) {
-			
-			formkey = scripts[i].src.substring(scripts[i].src.indexOf('FORMKEY:') + 8,
-											   scripts[i].src.indexOf('FORMKEY:') + 8 + 12);
-			form100Script = scripts[i];								
-		}
-	}
-	
-    var parentNode = formKey100.parentNode;
-	var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://www.100forms.com/widgets/fileupload/' + formkey.toLowerCase() + "/";
-    parentNode.insertBefore(script, formKey100);
-}
 
-f100();
+
+
+    </html>
